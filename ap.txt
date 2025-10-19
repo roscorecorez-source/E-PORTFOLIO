@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Third Webpage - Six Navigations</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf0ff;
+    margin: 0;
+  }
+
+  header {
+    background-color: #a06cd5;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  nav {
+    background-color: #e0aaff;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 8px;
+  }
+
+  nav a:hover {
+    background-color: #c77dff;
+  }
+
+  section {
+    padding: 30px;
+    text-align: center;
+    background-color: #fbe6ff;
+    min-height: 300px;
+  }
+
+  footer {
+    background-color: #a06cd5;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Third Webpage</h1>
+  <p>Navigate through six unique pages below!</p>
+</header>
+
+<nav>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="goals.html">Goals</a>
+  <a href="achievements.html">Achievements</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact3.html">Contact</a>
+</nav>
+
+<section>
+  <h2>Welcome!</h2>
+  <p>Select one of the links above to explore more sections.</p>
+  <br>
+  <a href="secondpage.html" style="color:#a06cd5; font-weight:bold;">← Back to Second Page</a>
+</section>
+
+<footer>
+  <p>© 2025 My Six-Page Website</p>
+</footer>
+
+</body>
+</html>

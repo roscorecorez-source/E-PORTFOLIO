@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Home Page</title>
+
+<!-- CSS STYLE -->
+<style>
+  body {
+    font-family:Courier New;
+    background-image:url('bg.JPG');
+    margin: 0;
+    background-size: cover;
+	background-repeat:no-repeat;
+	color:#333;
+  }
+
+  header {
+    background-color: lightyellow;
+    color: white;
+    padding: 15px;
+    text-align: center
+  }
+ }
+
+h2 {
+  color: #c20086;
+  background-color: #fff3fb;
+  border-radius: 15px;
+  width: 70%;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+h3 {
+  color: #ffd700;
+  background-color: #ff5984;
+  border-radius: 15px;
+  width: 50%;
+  margin: 10px auto;
+  padding: 5px; text-align:center;
+}
+section {
+  background-color: #fff7fc;
+  border: 3px dashed #ffbdf2;
+  border-radius: 20px;
+  width: 80%;
+  margin: 20px auto;
+  padding: 15px;
+}
+
+img {
+  border-radius: 20px;
+  border: 3px solid #ffbdf2;
+  width: 200px;
+  margin: 10px;
+}
+
+
+
+6
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: lightpink;
+  }
+
+  nav a {
+    color: pink;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    background-color: #ff66b2;
+  }
+
+  section {
+    padding: 20px;
+    text-align: center;
+  }
+
+  footer {
+    background-color: #d279a6;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  
+
+ 
+</style>
+</head>
+<body background=“image.jpg”>
+
+<header>
+ <h1> My EPORTFOLIO </h1> 
+</header>
+
+<!-- NAVIGATION BAR -->
+<nav>
+  <a href="aboutme.html" onclick="showContent('home')">About Me</a>
+  <a href="ict.html" onclick="showContent('about')">ICT</a>
+  <a href="ap.html" onclick="showContent('contact')">A.P</a>
+</nav>
+
+<!-- CONTENT AREA -->
+<img src="me.JPG"> <h3> Hello there! Nice to meet you! Feel free to explore my website!</h3>
+<section id="content" class="fade">
+  <h2>Home</h2>
+  <p> Welcome to my homepage! </p>
+ 
+</section>
+
+
+
+
+
+
+</body>
+</html>

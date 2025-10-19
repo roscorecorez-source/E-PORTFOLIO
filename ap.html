@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>AP</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Monospace;
+    background: url('pinkie.gif') center/cover no-repeat fixed;
+  }
+  header {
+    text-align: center;
+    border: 4px solid hotpink;
+    background: pink;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 15px auto;
+    width: 85%;
+  }
+  .video-area {
+    text-align: center;
+    margin: 10px 0 25px;
+  }
+  .flipbook {
+    position: relative;
+    width: 760px;
+    height: 640px;
+    margin: 0 auto 60px;
+    perspective: 2000px;
+  }
+  .page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: pink;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    transform-origin: left center;
+    transition: transform 1s ease;
+    overflow: hidden;
+    backface-visibility: hidden;
+  }
+  .front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+  h5 {
+    border: 3px solid gold;
+    padding: 6px;
+    border-radius: 8px;
+    background: lightpink;
+    text-align: center;
+  }
+  p {
+    line-height: 1.5;
+    text-align: justify;
+    margin: 6px 0;
+  }
+  ul {
+    margin: 8px 0 12px 20px;
+  }
+  .images {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  .images img {
+    width: 49%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid hotpink;
+  }
+  .btn {
+    background: yellow;
+    color: white;
+    padding: 9px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 8px 5px;
+  }
+  .btn:hover {
+    background: hotpink;
+  }
+  input[type=radio] {
+    display: none;
+  }
+  /* Default rotation */
+  .cover, .p1, .p2, .p3, .p4, .p5, .p6 {
+    transform: rotateY(-180deg);
+  }
+  #page0:checked ~ .cover { transform: rotateY(0deg); z-index: 7; }
+  #page1:checked ~ .p1 { transform: rotateY(0deg); z-index: 7; }
+  #page2:checked ~ .p2 { transform: rotateY(0deg); z-index: 7; }
+  #page3:checked ~ .p3 { transform: rotateY(0deg); z-index: 7; }
+  #page4:checked ~ .p4 { transform: rotateY(0deg); z-index: 7; }
+  #page5:checked ~ .p5 { transform: rotateY(0deg); z-index: 7; }
+  #page6:checked ~ .p6 { transform: rotateY(0deg); z-index: 7; }
+</style>
+</head>
+<body>
+
+<header>
+  <h2>ARALING PANLIPUNAN </h2>
+  <p>Mga Aralin sa Ekonomiks: Demand, Supply, Price Elasticity, Market Equilibrium, Price Control, at Estruktura ng Pamilihan</p>
+</header>
+
+<!-- VIDEO SECTION -->
+<div class="video-area">
+  <video width="70%" controls>
+    <source src="ap.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<div class="flipbook">
+  <!-- Radio buttons for flipping -->
+  <input type="radio" name="page" id="page0" checked>
+  <input type="radio" name="page" id="page1">
+  <input type="radio" name="page" id="page2">
+  <input type="radio" name="page" id="page3">
+  <input type="radio" name="page" id="page4">
+  <input type="radio" name="page" id="page5">
+  <input type="radio" name="page" id="page6">
+
+  <!-- COVER PAGE -->
+  <div class="page cover">
+    <div class="front">
+      <h5>Hello po! Click me! </h5>
+      <p>Ang flipbook na ito ay naglalaman ng mga aralin tungkol sa pamilihan, kabilang ang demand, supply, price elasticity, market equilibrium, price control, at estruktura ng pamilihan.</p>
+      <label for="page1" class="btn">Start Lesson 1 ➤</label>
+    </div>
+  </div>
+
+  <!-- LESSON 1: DEMAND -->
+  <div class="page p1">
+    <div class="front">
+      <h5>Lesson 1: Demand</h5>
+      <p>Ang demand ay ang dami ng produkto at serbisyo na gusto at kayang bilhin ng mga mamimili sa isang takdang presyo at particular na panahon.</p>
+
+      <p><b>Kaugnayan ng presyo sa demand ng tao</b><br>
+      Ang presyo ang pinakamahalagang nagtatakda (determinant) sa dami ng produkto.</p>
+
+      <p><b>Batas ng Demand</b><br>
+      Kapag mataas ang presyo, mababa ang dami ng gusto at kayang bilhin at kapag bumaba ang presyo, tataas ang dami ng gusto at kayang bilhin (Ceteris Paribus).</p>
+
+      <p><b>Ceteris Paribus</b><br>
+      Presyo lamang ang salik na nakakaapekto sa pagbabago ng quantity demanded habang ang ibang salik ay hindi nagbabago o nakakaapekto rito.</p>
+
+      <p><b>Dalawang konseptong nagpapaliwanag:</b><br>
+      <b>1. Substitution Effect</b> — Kapag tumaas ang presyo, maghahanap ng pamalit na mas mura.<br>
+      <b>2. Income Effect</b> — Mas malaki ang halaga ng kinikita kapag mas mababa ang presyo.</p>
+
+      <p><b>Demand = Kagustuhan + Kakayahan</b></p>
+
+      <h5>Lesson 1 - Additional Notes</h5>
+      <p><b>Demand Schedule</b> — Isang tsart na nagpapakita ng bilang ng kalakal na hinihiling sa mga tiyak na presyo.</p>
+      <p><b>Demand Function</b> — Matematikong paglalahad: Qd = a - bP (Qd = f(P)).</p>
+      <p><b>Demand Curve</b> — Grapikong representasyon ng batas ng demand; negatibong relasyon ng presyo at dami.</p>
+
+      <div class="images">
+        <img src="0.jpg" alt="Demand Image 1">
+        <img src="5.jpg" alt="Demand Image 2">
+      </div>
+
+      <div class="controls">
+        <label for="page2" class="btn">Next ➤</label>
+        <label for="page0" class="btn">Back to Cover</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- LESSON 2: SUPPLY -->
+  <div class="page p2">
+    <div class="front">
+      <h5>Lesson 2: Supply</h5>
+      <p>Ang supply ay dami ng produkto o serbisyo na gusto at kayang ibenta ng produsyer sa isang takdang presyo at partikular na panahon.</p>
+
+      <p><b>Batas ng Supply</b><br>
+      Kapag mataas ang presyo, tataas ang gusto at kayang ibenta na produkto; kapag mababa naman ay bababa ang kagustuhan at kakayahan na magbenta ng produkto.</p>
+
+      <p><b>Supply Function / Schedule / Curve</b><br>
+      Sa pamamagitan ng mathematical equation ay mailalarawan ang supply function. Ang supply curve ay nagpapakita ng tuwirang relasyon ng presyo at dami ng supply.</p>
+
+      <ul>
+        <li>Teknolohiya</li>
+        <li>Pagbabago ng mga salik ng produksyon</li>
+        <li>Presyo ng kaugnay na produkto</li>
+        <li>Dami ng nagtitinda</li>
+        <li>Ekspektasyon ng presyo</li>
+        <li>Okasyon/Tradisyon at Panahon/Klima</li>
+        <li>Dali ng pagkasira ng produkto</li>
+        <li>Subsidiya o tulong mula sa pamahalaan</li>
+      </ul>
+
+      <div class="images">
+        <img src="3.jpg" alt="Supply Image 1">
+        <img src="9.jpg" alt="Supply Image 2">
+      </div>
+
+      <div class="controls">
+        <label for="page3" class="btn">Next ➤</label>
+        <label for="page1" class="btn">⬅ Back</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- LESSON 3: PRICE ELASTICITY -->
+  <div class="page p3">
+    <div class="front">
+      <h5>Lesson 3: Price Elasticity</h5>
+      <p>Ang <b>Price Elasticity</b> ay sumusukat kung gaano kalaki ang magiging pagbabago sa quantity demanded o supplied kapag nagbago ang presyo ng produkto.</p>
+      <p>Ang <b>ELASTISIDAD NG DEMAND</b> ay sumusukat kung gaano kalaki ang magiging pagbabago sa quantity demanded o supplied kapag nagbago ang presyo ng produkto.</p>
+      <p>Ang <b>ELASTISIDAD NG SUPPLY</b> — Kapag mataas ang presyo ng isang bilihin, tataas ang dami ng produktong handang ipagbili sa isang takdang panahon. Kapag mababa ang presyo, bababa rin ang dami ng produktong nais ipagbili.</p>
+
+      <ul>
+        <li><b>Elastic Demand</b> – Malaki ang pagbabago sa dami kapag nagbago ang presyo.</li>
+        <li><b>Inelastic Demand</b> – Maliit lamang ang pagbabago sa dami kapag nagbago ang presyo.</li>
+        <li><b>Unitary Elastic</b> – Proporsyonal ang pagbabago sa presyo at dami.</li>
+        <li><b>Ganap na Elastic</b> – |E| = ∞, kahit maliit na pagbabago sa presyo ay malaking epekto sa demand.</li>
+        <li><b>Ganap na Di-Elastic</b> – |E| = 0, hindi naapektuhan ang demand kahit magbago ang presyo.</li>
+      </ul>
+
+      <div class="images">
+        <img src="6.jpg" alt="Elasticity Image 1">
+        <img src="10.jpg" alt="Elasticity Image 2">
+      </div>
+
+      <div class="controls">
+        <label for="page4" class="btn">Next ➤</label>
+        <label for="page2" class="btn">⬅ Back</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- LESSON 4: MARKET EQUILIBRIUM -->
+  <div class="page p4">
+    <div class="front">
+      <h5>Lesson 4: Market Equilibrium</h5>
+
+      <p>Ang <b>Ekilibriyong Presyo</b> ay punto kung saan nagtatagpo ang demand at supply. Dito nagkakaroon ng kasunduan sa presyo at dami ng produkto.</p>
+      <ul>
+        <li><b>Shortage</b> – Kapag mas mataas ang demand kaysa supply.</li>
+        <li><b>Surplus</b> – Kapag mas mataas ang supply kaysa demand.</li>
+      </ul>
+      <p>Ang pagbabago sa demand o supply ay nagdudulot ng bagong ekilibriyo sa presyo.</p>
+      <p>Disequilibrium — kapag may sudden changes sa supply o demand, o kapag may price control, mawawala pansamantala ang ekilibriyo at magkakaroon ng shortage o surplus hanggang sa mag-adjust ang merkado.</p>
+
+      <div class="images">
+        <img src="7.jpg" alt="Equilibrium Image 1">
+        <img src="4.jpg" alt="Equilibrium Image 2">
+      </div>
+
+      <div class="controls">
+        <label for="page5" class="btn">Next ➤</label>
+        <label for="page3" class="btn">⬅ Back</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- LESSON 6: PRICE CONTROL -->
+  <div class="page p5">
+    <div class="front">
+      <h5> LESSON 6 </h5>
+      <p>Ang <b>Price Control</b> ay hakbang ng pamahalaan upang mapanatili ang presyo ng mga pangunahing bilihin sa abot-kayang antas para sa mamamayan. Ang National Price Coordinating Council ay nabuo sa tulong ng Price Control Act. Ito ay may layunin at gawaing i-monitor at mabantayan ang presyo ng mga produkto pagkatapos magpalabas ng price ceiling ang pamahalaan.</p>
+      <ul>
+        <li><b>Price Ceiling</b> – Ang price ceiling ay itinatakda upang maprotektahan ang mamimili — subalit kapag mas mababa ito kaysa sa ekilibriyong presyo, nagdudulot ito ng kakulangan o shortage. </li>
+        <li><b>Price Floor</b> – Pinakamababang presyo. Kapag mas mataas ito sa ekilibriyo, nagkakaroon ng <b>surplus</b>.</li>
+      </ul>
+      <p><b>Republic Act 7581 (Price Control Act):</b> Ang Republic Act 7581 (Price Control Act) ay lehitimong batayan ng pamahalaan para magpatupad ng price ceilings at price supports sa panahon ng kalamidad at emergency. Ang National Price Coordinating Council ang may tungkuling magmonitor at magpatupad ng mga hakbang. Layunin nitong protektahan ang mga mamimili laban sa labis na taas ng presyo, lalo na sa panahon ng emergency o kalamidad.</p>
+
+      <div class="images">
+        <img src="1.jpg" alt="Price Control Image 1">
+        <img src="12.jpg" alt="Price Control Image 2">
+      </div>
+
+      <div class="controls">
+        <label for="page6" class="btn">Next ➤</label>
+        <label for="page4" class="btn">⬅ Back</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- LESSON 6: ESTRUKTURA NG PAMILIHAN -->
+  <div class="page p6">
+    <div class="front">
+      <h5>LESSON 5</h5>
+      <p>Ang estruktura ng pamilihan ay tumutukoy sa organisasyon at katangian ng pamilihan batay sa bilang ng mga mamimili at prodyuser, uri ng produkto, at antas ng kompetisyon. Nakakaapekto ito sa paraan ng pagbuo ng presyo at dami ng produkto sa merkado.</p>
+
+      <p><b>Mga Uri ng Estruktura ng Pamilihan</b></p>
+      <ul>
+        <li><b>Ganap na Kompetisyon (Perfect Competition):</b> Maraming prodyuser at mamimili; homogenous ang produkto; price taker ang mga seller. (Hal.: palengke ng gulay)</li>
+        <li><b>Monopolistikong Kompetisyon (Monopolistic Competition):</b> Maraming nagtitinda ngunit may product differentiation; advertising mahalaga.</li>
+        <li><b>Oligopolyo (Oligopoly):</b> Ilang malalaking kompanya lamang ang kumokontrol sa malaking bahagi ng supply; may interdependence at posibleng collusion. (Hal.: industriya ng langis, telecommunication)</li>
+        <li><b>Monopolyo (Monopoly):</b> Iisang supplier lamang ng produkto; malaki ang kontrol sa presyo at supply. (Hal.: exclusive utilities)</li>
+        <li><b>Monopsonyo (Monopsony):</b> Isang mamimili lamang ang may malaking impluwensya sa presyo; maraming supplier.</li>
+      </ul>
+
+      <div class="images">
+        <img src="8.jpg" alt="Structure Image 1">
+        <img src="11.jpg" alt="Structure Image 2">
+      </div>
+
+      <div class="controls">
+        <label for="page0" class="btn">Close Book</label>
+        <label for="page5" class="btn">⬅ Back</label>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Me</title>
+  <style>
+    body {
+      font-family: Monospace;
+	  color:maroon;
+      margin: 0;
+      background-image: url('flowers.gif');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      scroll-behavior: smooth;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #ff5c8a;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffe4ec;
+    }
+
+    /* Section Base */
+    section {
+      padding: 120px 20px 80px;
+      text-align: center;
+      min-height: 100vh;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 15px;
+      margin: 80px auto;
+      width: 90%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    /* Intro Section */
+    .intro-section img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .intro-section h1 {
+      color: #ff5c8a;
+      font-size: 2.5em;
+      margin-top: 20px;
+      border: 5px groove gold;
+      background-color: gold;
+      padding: 10px;
+      display: inline-block;
+      border-radius: 10px;
+    }
+
+    .intro-section p {
+      color: #444;
+      font-size: 1.1em;
+      max-width: 600px;
+      margin: 15px auto;
+      line-height: 1.6;
+      border: 5px groove gold;
+      background-color: gold;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    /* Fun Facts */
+    .fun-facts {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    .fact {
+      background: #fff;
+      width: 240px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: 0.3s ease;
+    }
+
+    .fact:hover {
+      background: #ffe6ef;
+      transform: translateY(-5px);
+    }
+
+    .fact h3 {
+      color: hotpink;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .fact p {
+      color: #666;
+      font-size: 0.95em;
+    }
+
+    /* Section Titles */
+    h1 {
+      font-family: Garamond, serif;
+      color: hotpink;
+    }
+
+    hr {
+      border: none;
+      height: 5px;
+      background: gold;
+      width: 80%;
+      margin: 20px auto;
+      border-radius: 5px;
+    }
+
+    /* About Section */
+    #about p {
+      border: 5px groove gold;
+      background-color: pink;
+      color: gold;
+      font-family: monospace;
+      padding: 15px;
+      box-shadow: 10px 5px yellow;
+      border-radius: 10px;
+      text-align: justify;
+    }
+
+    /* Media styling */
+    img, video {
+      max-width: 200px;
+      border-radius: 10px;
+      margin: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    video {
+      max-width: 300px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#intro">Intro</a>
+    <a href="#about">About Me</a>
+    <a href="#family">Family</a>
+    <a href="#friends">Friends</a>
+  </nav>
+
+  <!-- Intro Section -->
+  <section id="intro" class="intro-section">
+    <img src="wow.jpg" alt="Photo">
+    <h1>Welcome to my personal space!</h1>
+    <p>Hi po! Hehe bakit ka nandito? Crush mo 'ko noh??? joke! Below are <mark>niche</mark> facts about me, if you want to know more, click on the navigation bar!</p>
+
+    <div class="fun-facts">
+      <div class="fact">
+        <h3>HUGE FILM enthusiast</h3>
+        <p>I love watching and critiquing films! Favorite intl film is <b>Ladybird!</b> and local film is <b>Four Sisters and a Wedding</b>.</p>
+      </div>
+      <div class="fact">
+        <h3>I listen to almost everything</h3>
+        <p>Yeah, even rock and punk music! But I love OPM and K-pop the most — depende rin sa mood and vibes honestly...</p>
+      </div>
+      <div class="fact">
+        <h3>I have a childhood photo with Ryzza Mae</h3>
+        <p>I LOVE YOU RYZZA MAE MY FELLOW OA GIRLIE 💖</p>
+      </div>
+      <div class="fact">
+        <h3>I won a Technokids quiz bee in elem!</h3>
+        <p>My elementary school had a coding and design curriculum — cool, right?</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <h1>Learn more about Jayzel!</h1>
+    <hr>
+    <img src="me1.jpg" alt="Jayzel">
+	<img src="me2.jpg" alt="Jayzel">
+	<img src="me3.jpg" alt="Jayzel">
+	<img src="me4.jpg" alt="Jayzel">
+ <video controls src="mevid.mp4"></video>
+    <p style="color:hotpink;">
+      Jayzel Zyrine °❀⋆.ೃ࿔*:･  
+      <br><br>
+      Hi my name is Jayzel! I am currently 14 turning 15 this month! ❤️  
+      My birthday is on October 23, 2010 and my top favorite things are:
+    </p>
+    <ol style="text-align:left; display:inline-block;">
+      <li>Matcha</li>
+      <li>Movies</li>
+      <li>Writing</li>
+      <li>Art</li>
+      <li>Travelling</li>
+      <li>Fashion</li>
+      <li>Games</li>
+      <li>Sports</li>
+      <li>Public Speaking</li>
+    </ol>
+  </section>
+
+  <!-- Family Section -->
+  <section id="family">
+    <h1>My Family</h1>
+    <hr>
+    <img src="family1.jpg" alt="Family photo">
+    <img src="family2.jpg" alt="Family photo">
+	<img src="family3.jpg" alt="Family photo">
+	<img src="family5.jpg" alt="Family photo">
+    <video controls src="familyvid.mp4"></video>
+    <p>
+      My mom is a very strong woman who provides for me independently.  
+      Although she’s often busy, she always finds time to make me feel loved.  
+      My favorite memory with her was our trip to <b>Hong Kong</b> when I was younger! My Grandma also takes care of me and handles most of the household chores so my mom and I can focus on working and studying.
+    </p>
+  </section>
+
+  <!-- Friends Section -->
+  <section id="friends">
+    <h1>My Friends</h1>
+    <hr>
+    <img src="friends1.jpg" alt="Friends photo">
+    <img src="friends2.jpg" alt="Friends photo">
+	<img src="friends3.jpg" alt="Friends photo">
+	<img src="friends4.jpg" alt="Friends photo">
+    <video controls src="friendsvid.mp4"></video>
+    <p>
+      I have many friends, but my closest ones are Joy and Yeuffa, The Skinnies,  
+      The Accountability Family, Bianca, and Eunice! 💞  
+      The photo above is from our trip to Tagaytay — one of my favorite memories! I hold my friends very close to my heart as they are the ones that comfort me and the people that I spend most of my time with! I love you guyss!
+    </p>
+  </section>
+
+</body>
+</html>

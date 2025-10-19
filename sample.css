@@ -1,0 +1,4 @@
+.NoDimensions {background-color: pink; font-family:Times, Georgia; font-size:30px;}
+.HasDimensions{background-color:yellow; font-family:Arial,Verdana; font-size:20px; width:50%;}
+.Hidden{background-color:lightblue;font-
+family:Arial, Verdana; font-size:12px; visibility:hidden;}

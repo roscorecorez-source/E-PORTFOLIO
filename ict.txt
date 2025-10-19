@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Multi-Section Page</title>
+
+<!-- CSS STYLE -->
+<style>
+  body {
+    font-family: Arial, sans-serif;
+   background-image:url('pink.GIF');
+    margin: 0;
+    background-size: cover;
+	background-repeat:no-repeat;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: #c77dff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* Navigation container */
+  nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #ffb3d9;
+    padding: 10px 0;
+  }
+
+  nav div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav h3 {
+    color: white;
+    margin-bottom: 8px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 6px 10px;
+    font-weight: bold;
+    border-radius: 6px;
+  }
+
+  nav a:hover {
+    background-color: #ff66b2;
+  }
+
+  section {
+    padding: 20px;
+    text-align: center;
+    background-color: #ffe6f2;
+    min-height: 300px;
+  }
+
+  footer {
+    background-color: #c77dff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .fade {
+    animation: fadeIn 0.6s;
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to My 10-Page Navigation Site</h1>
+</header>
+
+<!-- NAVIGATION BAR (2 SECTIONS) -->
+<nav>
+  <!-- Section A -->
+  <div>
+    <h3>Section A</h3>
+    <a href="#" onclick="showContent('home')">Home</a>
+    <a href="#" onclick="showContent('profile')">Profile</a>
+    <a href="#" onclick="showContent('gallery')">Gallery</a>
+    <a href="#" onclick="showContent('services')">Services</a>
+    <a href="#" onclick="showContent('news')">News</a>
+  </div>
+
+  <!-- Section B -->
+  <div>
+    <h3>Section B</h3>
+    <a href="#" onclick="showContent('contact')">Contact</a>
+    <a href="#" onclick="showContent('faq')">FAQ</a>
+    <a href="#" onclick="showContent('reviews')">Reviews</a>
+    <a href="#" onclick="showContent('settings')">Settings</a>
+    <a href="#" onclick="showContent('help')">Help</a>
+  </div>
+</nav>
+
+<!-- CONTENT AREA -->
+<section id="content" class="fade">
+  <h2>Home</h2>
+  <p>Welcome! Click on the links above to explore this website.</p>
+</section>
+
+<footer>
+  <p>© 2025 My Multi-Section Website</p>
+</footer>
+
+<!-- JAVASCRIPT FUNCTION -->
+<script>
+  function showContent(page) {
+    let content = document.getElementById("content");
+
+    let pages = {
+      home: "<h2>Home</h2><p>Welcome to the homepage. Explore different sections above.</p>",
+      profile: "<h2>Profile</h2><p>This is your personal profile section.</p>",
+      gallery: "<h2>Gallery</h2><p>Here you can view beautiful images and albums.</p>",
+      services: "<h2>Services</h2><p>We offer high-quality and affordable services.</p>",
+      news: "<h2>News</h2><p>Stay updated with the latest announcements.</p>",
+      contact: "<h2>Contact</h2><p>Reach out to us through email or social media.</p>",
+      faq: "<h2>FAQ</h2><p>Find answers to commonly asked questions here.</p>",
+      reviews: "<h2>Reviews</h2><p>Read what others say about our website!</p>",
+      settings: "<h2>Settings</h2><p>Adjust your account and preferences here.</p>",
+      help: "<h2>Help</h2><p>Need assistance? We're here to help.</p>"
+    };
+
+    content.innerHTML = pages[page] || "<h2>Page Not Found</h2>";
+    content.classList.remove("fade");
+    void content.offsetWidth; // restart animation
+    content.classList.add("fade");
+  }
+</script>
+
+</body>
+</html>
